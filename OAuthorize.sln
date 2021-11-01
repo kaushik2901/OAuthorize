@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuthorize", "OAuthorize\OAuthorize.csproj", "{AB45085B-B513-4186-BD8F-74C49A9E10DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OAuthorize", "OAuthorize\OAuthorize.csproj", "{3ED787E9-3C61-4A48-BFCF-593D56AE8994}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAAC8A83-D3DF-4E74-B807-C939B35DE2AA}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB45085B-B513-4186-BD8F-74C49A9E10DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB45085B-B513-4186-BD8F-74C49A9E10DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB45085B-B513-4186-BD8F-74C49A9E10DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB45085B-B513-4186-BD8F-74C49A9E10DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ED787E9-3C61-4A48-BFCF-593D56AE8994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ED787E9-3C61-4A48-BFCF-593D56AE8994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ED787E9-3C61-4A48-BFCF-593D56AE8994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ED787E9-3C61-4A48-BFCF-593D56AE8994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
