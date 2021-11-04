@@ -17,13 +17,15 @@ namespace OAuthorize.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddRazorPages();
             services.AddIdentityServer()
               .AddInMemoryIdentityResources(Config.GetIdentityScopes())
               .AddInMemoryApiResources(Config.GetApiScopes())
               .AddInMemoryClients(Config.GetClients())
               .AddTestUsers(Config.GetUsers())
               .AddDeveloperSigningCredential();
+
+            services.AddRazorPages();
+            services.AddControllersWithViews();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -40,15 +42,15 @@ namespace OAuthorize.Web
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseRouting();
 
             app.UseIdentityServer();
-
-            app.UseRouting();
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapDefaultControllerRoute();
                 endpoints.MapRazorPages();
             });
         }
