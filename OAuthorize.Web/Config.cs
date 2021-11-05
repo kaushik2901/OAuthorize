@@ -15,9 +15,7 @@ namespace OAuthorize.Web
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
                 new IdentityResources.Email(),
-                new IdentityResource {
-                    Name = "role",
-                }
+                new IdentityResource { Name = "role" }
             };
         }
 
@@ -26,9 +24,9 @@ namespace OAuthorize.Web
             return new List<ApiResource>
             {
                 new ApiResource {
-                    Name = "vendorManagementAPI",
-                     DisplayName = "Vendor API",
-                         Description = "Vendor API scope",
+                    Name = "mURL API",
+                    DisplayName = "mURL API",
+                    Description = "mURL API",
                 }
             };
         }
@@ -42,19 +40,18 @@ namespace OAuthorize.Web
                     ClientId = "client",
                     ClientName ="MVC Client",
                     AllowedGrantTypes= IdentityServer4.Models.GrantTypes.Implicit,
-                    RedirectUris = {
-                      "http://localhost:5002/signin-oidc" },
-                      PostLogoutRedirectUris= {"http://localhost:5002"},
-                      Enabled=true,
-                      AccessTokenType=  AccessTokenType.Jwt,
-                      AllowedScopes =new List<string>
-                      {
-                          StandardScopes.OpenId,
-                          StandardScopes.Profile,
-                          StandardScopes.Email,
-                          StandardScopes.OfflineAccess,
-                          "role"
-                      },
+                    RedirectUris = { "http://localhost:5002/signin-oidc" },
+                    PostLogoutRedirectUris= {"http://localhost:5002"},
+                    Enabled = true,
+                    AccessTokenType =  AccessTokenType.Jwt,
+                    AllowedScopes = new List<string>
+                    {
+                        StandardScopes.OpenId,
+                        StandardScopes.Profile,
+                        StandardScopes.Email,
+                        StandardScopes.OfflineAccess,
+                        "role"
+                    },
                   }
             };
         }
